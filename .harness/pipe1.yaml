@@ -1,0 +1,33 @@
+pipeline:
+    name: pipe1
+    identifier: pipe1
+    projectIdentifier: june6
+    orgIdentifier: default
+    storeType: REMOTE
+    remoteType: create
+    tags: {}
+    stages:
+        - stage:
+              name: ap1
+              identifier: ap1
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: g1
+                                identifier: g1
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
+                                        userGroups: <+input>
+                                    approverInputs: []
+              tags: {}
