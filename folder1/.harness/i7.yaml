@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "i7"
+  name: "i7"
+  orgIdentifier: "default"
+  projectIdentifier: "June1"
+  pipeline:
+    identifier: "p1"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "A2"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.newUserGroup"
