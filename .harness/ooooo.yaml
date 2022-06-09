@@ -1,6 +1,7 @@
 inputSet:
   identifier: "gitX"
   name: "gitX"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "june6"
   pipeline:
