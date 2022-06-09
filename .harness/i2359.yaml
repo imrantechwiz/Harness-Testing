@@ -1,6 +1,7 @@
 inputSet:
   identifier: "gitXInputSet03H"
-  name: "gitXInputSet03H"
+  name: "ff"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "june6"
   pipeline:
