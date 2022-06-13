@@ -28,4 +28,3 @@ pipeline:
                                         disallowPipelineExecutor: false
                                         userGroups: <+input>
                                     approverInputs: []
-              tags: {}
