@@ -1,0 +1,31 @@
+pipeline:
+    name: pipe15
+    identifier: pipe15
+    projectIdentifier: imranTest
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: A2
+              identifier: A2
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: A3
+                                identifier: A3
+                                type: HarnessApproval
+                                timeout: 1d
+                                spec:
+                                    approvalMessage: |-
+                                        Please review the following information
+                                        and approve the pipeline progression
+                                    includePipelineExecutionHistory: true
+                                    approvers:
+                                        minimumCount: 1
+                                        disallowPipelineExecutor: false
+                                        userGroups: <+input>
+                                    approverInputs: []
+              tags: {}
