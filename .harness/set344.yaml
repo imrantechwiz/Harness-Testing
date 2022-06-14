@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "set344"
+  name: "set344"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "pipe13june"
+    stages:
+    - stage:
+        identifier: "s1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "ap1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.viewer"
