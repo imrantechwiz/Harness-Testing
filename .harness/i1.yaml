@@ -1,6 +1,7 @@
 inputSet:
   identifier: "i1"
   name: "i1"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "imranTest"
   pipeline:
