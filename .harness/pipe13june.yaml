@@ -26,6 +26,5 @@ pipeline:
                                     approvers:
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
-                                        userGroups:
-                                            - account.viewer
+                                        userGroups: <+input>
                                     approverInputs: []
