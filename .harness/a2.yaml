@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "a2"
+  name: "a2"
+  orgIdentifier: "default"
+  projectIdentifier: "june6"
+  pipeline:
+    identifier: "pipe2"
+    stages:
+    - stage:
+        identifier: "a1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "ap1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.vhgbjnkmjnhbgv"
