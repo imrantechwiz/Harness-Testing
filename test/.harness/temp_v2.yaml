@@ -1,0 +1,21 @@
+template:
+    name: temp
+    identifier: temp
+    versionLabel: v2
+    type: Step
+    projectIdentifier: templateDemo
+    orgIdentifier: default
+    tags: {}
+    spec:
+        type: ShellScript
+        timeout: 10m
+        spec:
+            shell: Bash
+            onDelegate: true
+            source:
+                type: Inline
+                spec:
+                    script: echo "Template By Imran Khan"
+            environmentVariables: []
+            outputVariables: []
+            executionTarget: {}

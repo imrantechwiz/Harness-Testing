@@ -1,0 +1,22 @@
+connector:
+  name: connectjune1
+  identifier: connectjune1
+  description: "hdskjvhdsk"
+  orgIdentifier: default
+  projectIdentifier: June1
+  type: Github
+  spec:
+    url: https://github.com/imrantechwiz/Harness-Testing
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: imrantechwiz
+          tokenRef: New_PAT_Token
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: New_PAT_Token
+    executeOnDelegate: false
+    type: Repo

@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "gitXInputSet-LRF"
+  name: "gitXInputSet-LRF"
+  orgIdentifier: "default"
+  projectIdentifier: "June1"
+  pipeline:
+    identifier: "p1"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "A2"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.newUserGroup"

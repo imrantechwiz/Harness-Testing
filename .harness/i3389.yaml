@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "gitXInputSettTK"
+  name: "gitXInputSettTK"
+  orgIdentifier: "default"
+  projectIdentifier: "june6"
+  pipeline:
+    identifier: "pipe1"
+    stages:
+    - stage:
+        identifier: "ap1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "g1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.newUserGroup"
