@@ -1,5 +1,5 @@
 pipeline:
-    name: demo
+    name: demoFinal
     identifier: pipe23
     projectIdentifier: imranTest
     orgIdentifier: default
