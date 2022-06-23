@@ -1,0 +1,21 @@
+pipeline:
+    name: june23
+    identifier: june23
+    projectIdentifier: templateDemo
+    orgIdentifier: default
+    tags: {}
+    stages:
+        - stage:
+              name: ap1
+              identifier: ap1
+              description: ""
+              type: Approval
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                name: script
+                                identifier: script
+                                template:
+                                    templateRef: temp
+              tags: {}
