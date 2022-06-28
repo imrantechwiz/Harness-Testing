@@ -1,6 +1,7 @@
 inputSet:
   identifier: "a28"
   name: "a28"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "imranTest"
   pipeline:
@@ -19,4 +20,3 @@ inputSet:
                   approvers:
                     userGroups:
                     - "account.newUserGroup"
-  description: ""
