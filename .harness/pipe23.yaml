@@ -29,4 +29,28 @@ pipeline:
                                         userGroups: <+input>
                                     approverInputs: []
               tags: {}
+        - stage:
+              name: q1
+              identifier: q1
+              description: ""
+              type: Custom
+              spec:
+                  execution:
+                      steps:
+                          - step:
+                                type: ShellScript
+                                name: a1
+                                identifier: a1
+                                spec:
+                                    shell: Bash
+                                    onDelegate: true
+                                    source:
+                                        type: Inline
+                                        spec:
+                                            script: echo jkhk
+                                    environmentVariables: []
+                                    outputVariables: []
+                                    executionTarget: {}
+                                timeout: 10m
+              tags: {}
     description: ""
