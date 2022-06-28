@@ -1,32 +1,32 @@
 pipeline:
-    name: p13
-    identifier: p13
-    projectIdentifier: mohit_git_simplification_project
-    orgIdentifier: aaaaaaaaaaaaaaaaDeepakOrg
-    tags: {}
-    stages:
-        - stage:
-              name: a1
-              identifier: a1
-              description: ""
-              type: Approval
+  name: "import13"
+  identifier: "import13"
+  projectIdentifier: "imranTest"
+  orgIdentifier: "default"
+  tags: {}
+  stages:
+  - stage:
+      name: "a1"
+      identifier: "a1"
+      description: ""
+      type: "Approval"
+      spec:
+        execution:
+          steps:
+          - step:
+              name: "ap1"
+              identifier: "ap1"
+              type: "HarnessApproval"
+              timeout: "1d"
               spec:
-                  execution:
-                      steps:
-                          - step:
-                                name: ap1
-                                identifier: ap1
-                                type: HarnessApproval
-                                timeout: 1d
-                                spec:
-                                    approvalMessage: |-
-                                        Please review the following information
-                                        and approve the pipeline progression
-                                    includePipelineExecutionHistory: true
-                                    approvers:
-                                        minimumCount: 1
-                                        disallowPipelineExecutor: false
-                                        userGroups:
-                                            - account.DocExampleGroup
-                                    approverInputs: []
-              tags: {}
+                approvalMessage: "Please review the following information\nand approve\
+                  \ the pipeline progression"
+                includePipelineExecutionHistory: true
+                approvers:
+                  minimumCount: 1
+                  disallowPipelineExecutor: false
+                  userGroups:
+                  - "account.DocExampleGroup"
+                approverInputs: []
+      tags: {}
+  description: ""
