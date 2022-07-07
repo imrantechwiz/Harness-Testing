@@ -1,6 +1,6 @@
 pipeline:
-  name: "a7"
-  identifier: "a7"
+  name: "o7"
+  identifier: "o7"
   projectIdentifier: "imranTest"
   orgIdentifier: "default"
   tags: {}
