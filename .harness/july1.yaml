@@ -26,6 +26,6 @@ pipeline:
                                     approvers:
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
-                                        userGroups: <+input>
+                                        userGroups: account.DocExampleGroup
                                     approverInputs: []
               tags: {}
