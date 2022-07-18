@@ -1,5 +1,5 @@
 pipeline:
-    name: july1
+    name: july18
     identifier: july1
     projectIdentifier: imranTest
     orgIdentifier: default
@@ -8,7 +8,7 @@ pipeline:
         - stage:
               name: a1
               identifier: a1
-              description: "Desc added"
+              description: Desc removed
               type: Approval
               spec:
                   execution:
@@ -26,6 +26,6 @@ pipeline:
                                     approvers:
                                         minimumCount: 1
                                         disallowPipelineExecutor: false
-                                        userGroups: account.DocExampleGroup
+                                        userGroups: <+input>
                                     approverInputs: []
               tags: {}
