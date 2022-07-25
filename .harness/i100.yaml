@@ -1,10 +1,10 @@
 inputSet:
-  identifier: "i100"
-  name: "i100"
+  identifier: "inputRvRl6kjdpf"
+  name: "i7ju"
   orgIdentifier: "default"
-  projectIdentifier: "june6"
+  projectIdentifier: "imranTest"
   pipeline:
-    identifier: "pipe1"
+    identifier: "p5july"
     stages:
     - stage:
         identifier: "ap1"
@@ -19,3 +19,4 @@ inputSet:
                   approvers:
                     userGroups:
                     - "account.newUserGroup"
+  description: ""

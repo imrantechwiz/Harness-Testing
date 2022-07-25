@@ -1,14 +1,13 @@
 inputSet:
-  identifier: "a28"
-  name: "a28"
-  tags: {}
+  identifier: "doNotDelete"
+  name: "doNotDelete"
   orgIdentifier: "default"
   projectIdentifier: "imranTest"
   pipeline:
-    identifier: "P28"
+    identifier: "pipe13june"
     stages:
     - stage:
-        identifier: "a1"
+        identifier: "s1"
         type: "Approval"
         spec:
           execution:
@@ -19,4 +18,4 @@ inputSet:
                 spec:
                   approvers:
                     userGroups:
-                    - "account.newUserGroup"
+                    - "account.viewer"

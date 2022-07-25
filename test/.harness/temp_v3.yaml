@@ -1,14 +1,14 @@
 template:
     name: temp
     identifier: temp
-    versionLabel: v2
+    versionLabel: v3
     type: Step
     projectIdentifier: templateDemo
     orgIdentifier: default
     tags: {}
     spec:
         type: ShellScript
-        timeout: <+input>
+        timeout: 10m
         spec:
             shell: Bash
             onDelegate: true
