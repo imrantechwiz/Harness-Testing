@@ -1,5 +1,5 @@
 pipeline:
-    name: UpdateNdMerge
+    name: UpdateNdMergeAndPR
     identifier: UpdateNdMerge
     projectIdentifier: GitXTest
     orgIdentifier: GitXorg
@@ -8,7 +8,7 @@ pipeline:
         - stage:
               name: A1
               identifier: A1
-              description: ""
+              description: ✅🚀
               type: Approval
               spec:
                   execution:
