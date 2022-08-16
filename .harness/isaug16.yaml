@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "isaug16"
+  name: "isaug16"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "aug16"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.UG1"
