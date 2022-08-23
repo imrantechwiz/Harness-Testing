@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "IS23"
+  name: "IS23"
+  orgIdentifier: "default"
+  projectIdentifier: "EnableGitSimplifictionViaAPI"
+  pipeline:
+    identifier: "API23"
+    stages:
+    - stage:
+        identifier: "q1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "a1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.test_group"
