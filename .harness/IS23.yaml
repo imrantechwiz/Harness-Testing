@@ -1,5 +1,6 @@
 inputSet:
   name: "IS234556789"
+  identifier: "IS23"
   orgIdentifier: "default"
   projectIdentifier: "EnableGitSimplifictionViaAPI"
   pipeline:
