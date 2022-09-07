@@ -1,11 +1,10 @@
 template:
-  name: eww2
+  name: eww23
   identifier: eww2
   versionLabel: e3
   type: Step
   projectIdentifier: AmitTest
   orgIdentifier: GitXOrg
-  tags: {}
   spec:
     type: HarnessApproval
     timeout: 1d
