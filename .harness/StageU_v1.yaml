@@ -1,0 +1,19 @@
+template:
+  name: StageU
+  identifier: StageU
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: rwe
+              identifier: rwe
+              template:
+                templateRef: StepU
+                versionLabel: v1
