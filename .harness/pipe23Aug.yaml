@@ -1,0 +1,32 @@
+pipeline:
+  name: pokemon23
+  identifier: pipe23Aug
+  projectIdentifier: EnableGitSimplifictionViaAPI
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Q1
+        identifier: Q1
+        description: pokemon23
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: A1
+                  identifier: A1
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.test_group
+                    approverInputs: []
+        tags: {}
