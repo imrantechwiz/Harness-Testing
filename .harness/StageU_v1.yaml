@@ -12,8 +12,8 @@ template:
       execution:
         steps:
           - step:
-              name: rwe
-              identifier: rwe
+              name: sa
+              identifier: sa
               template:
                 templateRef: StepU
                 versionLabel: v1
