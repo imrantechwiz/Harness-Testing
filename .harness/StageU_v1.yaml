@@ -12,7 +12,7 @@ template:
       execution:
         steps:
           - step:
-              name: sa
+              name: safsfdsdf
               identifier: sa
               template:
                 templateRef: StepU
