@@ -1,6 +1,7 @@
 inputSet:
   identifier: "qww"
-  name: "qww"
+  name: "qwdasdsadasd"
+  tags: {}
   orgIdentifier: "default"
   projectIdentifier: "imranTest"
   pipeline:
