@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: qq
         identifier: qq
-        description: ""
+        description: hjgjhgjg
         type: Approval
         spec:
           execution:
