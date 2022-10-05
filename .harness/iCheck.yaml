@@ -14,18 +14,14 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: ww
-                  identifier: ww
-                  type: HarnessApproval
-                  timeout: 1d
-                  spec:
-                    approvalMessage: |-
-                      Please review the following information
-                      and approve the pipeline progression
-                    includePipelineExecutionHistory: true
-                    approvers:
-                      minimumCount: 1
-                      disallowPipelineExecutor: false
-                      userGroups: <+input>
-                    approverInputs: []
+                  name: cvcv
+                  identifier: cvcv
+                  template:
+                    templateRef: account.oct5Step
+                    versionLabel: v2
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
         tags: {}
