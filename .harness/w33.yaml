@@ -1,0 +1,23 @@
+inputSet:
+  identifier: "w33"
+  name: "w3"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "iCheck"
+    stages:
+    - stage:
+        identifier: "qq"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "cvcv"
+                template:
+                  templateInputs:
+                    type: "HarnessApproval"
+                    spec:
+                      approvers:
+                        userGroups:
+                        - "account.PLQE"
