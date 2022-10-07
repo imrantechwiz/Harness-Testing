@@ -1,0 +1,24 @@
+template:
+  name: StageA
+  identifier: StageA
+  versionLabel: v1
+  type: Stage
+  projectIdentifier: defaultproject
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: s2
+              identifier: s2
+              template:
+                templateRef: StepA
+                versionLabel: v1
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>
