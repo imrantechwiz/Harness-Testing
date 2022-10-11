@@ -3,7 +3,7 @@ template:
   identifier: StepA
   versionLabel: v1
   type: Step
-  projectIdentifier: defaultproject
+  projectIdentifier: GitX_Remote
   orgIdentifier: default
   tags: {}
   spec:
