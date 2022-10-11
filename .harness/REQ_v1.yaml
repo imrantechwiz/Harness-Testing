@@ -1,0 +1,29 @@
+template:
+  name: REQ
+  identifier: REQ
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: ret
+          identifier: ret
+          template:
+            templateRef: StageFromStep
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: Q1
+                        template:
+                          templateInputs:
+                            type: HarnessApproval
+                            spec:
+                              approvers:
+                                userGroups: <+input>
