@@ -3,7 +3,7 @@ template:
   identifier: StageA
   versionLabel: v1
   type: Stage
-  projectIdentifier: defaultproject
+  projectIdentifier: GitX_Remote
   orgIdentifier: default
   tags: {}
   spec:
