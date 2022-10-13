@@ -3,8 +3,8 @@ template:
   identifier: StepA
   versionLabel: v1
   type: Step
-  projectIdentifier: GitX_Remote
-  orgIdentifier: default
+  projectIdentifier: SimplifiedGitSync_Do_Not_Delete
+  orgIdentifier: Simlified_Git_sync
   tags: {}
   spec:
     type: HarnessApproval
