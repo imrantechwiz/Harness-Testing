@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: q1
         identifier: q1
-        description: "sadsa"
+        description: sadsa✅✅✅✅✅✅
         type: Approval
         spec:
           execution:
