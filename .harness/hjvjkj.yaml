@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "hjvjkj"
+  name: "hjvjkj"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "qwerrrrrr"
+    stages:
+    - stage:
+        identifier: "dssd"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "ds"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account._account_all_users"
