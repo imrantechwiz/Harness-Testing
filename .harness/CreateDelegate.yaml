@@ -222,12 +222,12 @@ pipeline:
               spec:
                 variables: []
           infrastructure:
-            environmentRef: qa
+            environmentRef: QA
             infrastructureDefinition:
               type: KubernetesDirect
               spec:
-                connectorRef: account.plplayacc
-                namespace: harness-delegate-do-not-touch
+                connectorRef: Automationcluster
+                namespace: harness-delegate
                 releaseName: release-<+INFRA_KEY>
             allowSimultaneousDeployments: true
           execution:
