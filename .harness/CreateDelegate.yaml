@@ -216,7 +216,7 @@ pipeline:
         type: Deployment
         spec:
           serviceConfig:
-            serviceRef: delagte
+            serviceRef: service
             serviceDefinition:
               type: Kubernetes
               spec:
