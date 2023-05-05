@@ -245,14 +245,14 @@ pipeline:
                         script: |
                           set -x
 
-                          # if which jq; then
-                          #   echo found jq
-                          #   echo
-                          # else
-                          #   echo installing jq
-                          #   echo
-                          #   apt-get install -y jq
-                          # fi
+                          if which jq; then
+                            echo found jq
+                            echo
+                          else
+                            echo installing jq
+                            echo
+                            apt-get install -y jq
+                          fi
                           sleep 10s
 
                           delname="start1"
