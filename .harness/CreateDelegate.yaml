@@ -255,7 +255,7 @@ pipeline:
                           # fi
                           sleep 10s
 
-                          delname="demo"
+                          delname="start1"
                           accountid="e9qDvR_0RYWXRvbJHZCyCg" #<+pipeline.variables.accountid>
                           auth=$(echo -n 'aditya.kashyap@harness.io:Aditya$2401' | base64)
                           identifier="k8sautomation"
