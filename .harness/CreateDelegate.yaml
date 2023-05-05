@@ -290,7 +290,7 @@ pipeline:
                     environmentVariables: []
                     outputVariables: []
                     delegateSelectors:
-                      - quality-assurance-del-private
+                      - pl-play
                   timeout: 20m
                   failureStrategies: []
                   when:
