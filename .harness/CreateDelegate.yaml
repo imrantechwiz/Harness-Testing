@@ -286,7 +286,7 @@ pipeline:
 
                           rm -rf harness-acct-delegate.yaml
 
-                          sleep 5m
+                          sleep 8m
                     environmentVariables: []
                     outputVariables: []
                     delegateSelectors:
