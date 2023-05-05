@@ -1,7 +1,7 @@
 pipeline:
   allowStageExecutions: false
-  projectIdentifier: Quality_Assurence
-  orgIdentifier: QE_Team
+  projectIdentifier: CreateDelegates
+  orgIdentifier: default
   tags: {}
   stages:
     - stage:
