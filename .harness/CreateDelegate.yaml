@@ -255,11 +255,11 @@ pipeline:
                           fi
                           sleep 10s
 
-                          delname="start1"
-                          accountid=<+pipeline.variables.accountid>
+                          delname=<+pipeline.variables.delegateName>
+                          accountid=<+pipeline.variables.accountId>
                           auth=$(echo -n 'imran.khan@harness.io:Harness@987' | base64)
                           identifier="k8sautomation"
-                          namespace="harness-delegate-ng"
+                          namespace="harness-delegate"
                           env=<+pipeline.variables.ENV>
 
 
@@ -268,7 +268,7 @@ pipeline:
                           echo $token
                           sleep 30
                           curl --location --request POST "https://$env.harness.io/gateway/api/setup/delegates/generate-kubernetes-yaml?routingId=$accountid&accountId=$accountid&fileFormat=text%2Fplain" \
-                          --header 'authority: qa.harness.io' \
+                          --header 'authority: $env.harness.io' \
                           --header "authorization: Bearer $token" \
                           --header 'content-type: application/json' \
                           --data-raw '{"orgIdentifier":null,"projectIdentifier":null,"name":"'$delname'","description":"","size":"LAPTOP","delegateConfigurationId":null,"identifier":"'$identifier'","k8sConfigDetails":{"k8sPermissionType":"NAMESPACE_ADMIN","namespace":"'$namespace'"},"tags":null,"delegateType":"KUBERNETES","tokenName":"default_token"}' \
