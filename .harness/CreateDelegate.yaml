@@ -256,17 +256,18 @@ pipeline:
                           sleep 10s
 
                           delname="start1"
-                          accountid="e9qDvR_0RYWXRvbJHZCyCg" #<+pipeline.variables.accountid>
-                          auth=$(echo -n 'aditya.kashyap@harness.io:Aditya$2401' | base64)
+                          accountid=<+pipeline.variables.accountid>
+                          auth=$(echo -n 'imran.khan@harness.io:Harness@987' | base64)
                           identifier="k8sautomation"
-                          namespace="harness-delegate"
+                          namespace="harness-delegate-ng"
+                          env=<+pipeline.variables.ENV>
 
 
-                          token=`curl https://qa.harness.io/gateway/api/users/login?accountId=$accountid -H 'Content-Type: application/json' --data-binary '{"authorization": "'"Basic $auth"'"}' | jq -r '.resource.token'` 
+                          token=`curl https://$env.harness.io/gateway/api/users/login?accountId=$accountid -H 'Content-Type: application/json' --data-binary '{"authorization": "'"Basic $auth"'"}' | jq -r '.resource.token'` 
 
                           echo $token
                           sleep 30
-                          curl --location --request POST "https://qa.harness.io/gateway/api/setup/delegates/generate-kubernetes-yaml?routingId=$accountid&accountId=$accountid&fileFormat=text%2Fplain" \
+                          curl --location --request POST "https://$env.harness.io/gateway/api/setup/delegates/generate-kubernetes-yaml?routingId=$accountid&accountId=$accountid&fileFormat=text%2Fplain" \
                           --header 'authority: qa.harness.io' \
                           --header "authorization: Bearer $token" \
                           --header 'content-type: application/json' \
