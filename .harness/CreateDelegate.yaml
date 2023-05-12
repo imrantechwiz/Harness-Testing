@@ -314,6 +314,11 @@ pipeline:
           pipelineStatus: All
         delegateSelectors:
           - pl-play
+        variables:
+          - name: accountid
+            type: String
+            description: ""
+            value: <+input>
     - stage:
         name: NG-Immutable-Delegate-Install
         identifier: Immutable_Delegate_Install
