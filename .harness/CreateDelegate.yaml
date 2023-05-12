@@ -255,12 +255,12 @@ pipeline:
                           fi
                           sleep 10s
 
-                          delname=<+pipeline.variables.delegateName>
-                          accountid=<+pipeline.variables.accountId>
+                          delname=<+pipeline.stages.NGDelegateinstall.variables.delegateName>
+                          accountid=<+pipeline.stages.NGDelegateinstall.variables.accountId>
                           auth=$(echo -n 'imran.khan@harness.io:Harness@987' | base64)
                           identifier="k8sautomation"
                           namespace="harness-delegate"
-                          env=<+pipeline.variables.ENV>
+                          env=<+pipeline.stages.NGDelegateinstall.variables.ENV>
 
 
                           token=`curl https://$env.harness.io/gateway/api/users/login?accountId=$accountid -H 'Content-Type: application/json' --data-binary '{"authorization": "'"Basic $auth"'"}' | jq -r '.resource.token'` 
