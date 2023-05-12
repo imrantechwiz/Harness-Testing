@@ -259,7 +259,7 @@ pipeline:
                           accountid=<+pipeline.stages.NGDelegateinstall.variables.accountId>
                           auth=$(echo -n 'imran.khan@harness.io:Harness@987' | base64)
                           identifier="k8sautomation"
-                          namespace="harness-delegate-ng"
+                          namespace="qa-automation-signoff"
                           env=<+pipeline.stages.NGDelegateinstall.variables.ENV>
 
 
