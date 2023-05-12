@@ -258,12 +258,6 @@ pipeline:
                           delname=<+pipeline.stages.NGDelegateinstall.variables.delegateName>
                           accountid=<+pipeline.stages.NGDelegateinstall.variables.accountId>
                           auth=$(echo -n 'imran.khan@harness.io:Harness@987' | base64)
-                          if [ -z "$auth" ]
-                          then
-                              echo "User not found in this account"
-                          else
-                              echo "$auth"
-                          fi
 
                           identifier="k8sautomation"
                           namespace="qa-automation-signoff"
@@ -272,7 +266,14 @@ pipeline:
 
                           token=`curl https://$env.harness.io/gateway/api/users/login?accountId=$accountid -H 'Content-Type: application/json' --data-binary '{"authorization": "'"Basic $auth"'"}' | jq -r '.resource.token'` 
 
-                          echo $token
+                          if [ -z "$token" ]
+                          then
+                              echo "User not found in this account"
+                              break
+                          else
+                              echo "$token"
+                          fi
+
                           sleep 30
                           curl --location --request POST "https://$env.harness.io/gateway/api/setup/delegates/generate-kubernetes-yaml?routingId=$accountid&accountId=$accountid&fileFormat=text%2Fplain" \
                           --header 'authority: $env.harness.io' \
