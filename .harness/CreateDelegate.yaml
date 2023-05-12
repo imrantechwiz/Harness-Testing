@@ -316,7 +316,15 @@ pipeline:
         delegateSelectors:
           - pl-play
         variables:
-          - name: accountid
+          - name: accountId
+            type: String
+            description: ""
+            value: <+input>
+          - name: ENV
+            type: String
+            description: ""
+            value: <+input>.default(qa).allowedValues(qa,stress,prod,smp.test)
+          - name: delegateName
             type: String
             description: ""
             value: <+input>
