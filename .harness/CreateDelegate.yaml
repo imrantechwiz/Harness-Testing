@@ -279,7 +279,7 @@ pipeline:
                           sed -i '90 s/2048Mi/1536Mi/' harness-acct-delegate.yaml
 
                           sed -i '0,/containers:/s/      containers:/      imagePullSecrets:\n&/' harness-acct-delegate.yaml
-                          sed -i "/imagePullSecrets:/a  \      - name: installimmutable" harness-acct-delegate.yaml
+                          sed -i "/imagePullSecrets:/a  \      - name: regcred" harness-acct-delegate.yaml
 
                           cat harness-acct-delegate.yaml
 
