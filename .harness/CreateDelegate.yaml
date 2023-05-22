@@ -255,9 +255,14 @@ pipeline:
                           fi
                           sleep 10s
 
-                          delname=<+pipeline.stages.NGDelegateinstall.variables.delegateName>
-                          accountid=<+pipeline.stages.NGDelegateinstall.variables.accountId>
-                          auth=$(echo -n 'imran.khan@harness.io:Harness@987' | base64)
+                          delname = <+pipeline.stages.NGDelegateinstall.variables.delegateName>
+                          accountid = <+pipeline.stages.NGDelegateinstall.variables.accountId>
+
+                          userEmail = <+pipeline.stages.NGDelegateinstall.variables.userEmail>
+                          password = <+pipeline.stages.NGDelegateinstall.variables.password>
+
+                          auth=$(echo -n '$userEmail:$password' | base64)
+                          echo auth
 
                           identifier="k8sautomation"
                           namespace="qa-automation-signoff"
