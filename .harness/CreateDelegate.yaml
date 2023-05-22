@@ -265,7 +265,7 @@ pipeline:
                           echo auth
 
                           identifier="k8sautomation"
-                          namespace="qa-automation-signoff"
+                          namespace="qa-automation-signoff" #platform-dynamic-delegate.  with life of 4,6,8, hrs
                           env=<+pipeline.stages.NGDelegateinstall.variables.ENV>
 
 
