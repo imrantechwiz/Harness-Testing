@@ -341,6 +341,14 @@ pipeline:
             type: String
             description: ""
             value: <+input>
+          - name: userEmail
+            type: String
+            description: ""
+            value: <+input>
+          - name: password
+            type: String
+            description: ""
+            value: <+input>
     - stage:
         name: NG-Immutable-Delegate-Install
         identifier: Immutable_Delegate_Install
