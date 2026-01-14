@@ -1,0 +1,32 @@
+pipeline:
+  name: 769xx
+  identifier: xx
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: q1
+        identifier: q1
+        description: "zxzsa"
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: sde
+                  identifier: sde
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.PLQE
+                    approverInputs: []
+        tags: {}
