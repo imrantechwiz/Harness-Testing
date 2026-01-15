@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "IS9"
+  name: "IS9"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "Aug9"
+    stages:
+    - stage:
+        identifier: "A1"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "Q1"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.PLQE"

@@ -1,0 +1,13 @@
+connector:
+  name: Doc
+  identifier: Doc
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: ImrDemo
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: https://abc.com
+    providerType: DockerHub
+    auth:
+      type: Anonymous
+    executeOnDelegate: false

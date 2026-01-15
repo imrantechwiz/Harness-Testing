@@ -1,0 +1,24 @@
+template:
+  name: t6
+  identifier: t6
+  versionLabel: b8
+  type: Stage
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  spec:
+    type: Approval
+    spec:
+      execution:
+        steps:
+          - step:
+              name: iu
+              identifier: iu
+              template:
+                templateRef: q4
+                versionLabel: v1
+                templateInputs:
+                  type: HarnessApproval
+                  spec:
+                    approvers:
+                      userGroups: <+input>

@@ -1,0 +1,24 @@
+connector:
+  name: imrCon
+  identifier: imrCon
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: test6634
+  type: Github
+  spec:
+    url: https://github.com/imrantechwiz/Harness-Testing
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: imrantechwiz
+          tokenRef: imranGH
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: imranGH
+    delegateSelectors:
+    - automation-platform-ng-pre-qa
+    executeOnDelegate: true
+    type: Repo
