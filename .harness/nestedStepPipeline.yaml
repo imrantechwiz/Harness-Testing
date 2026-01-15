@@ -1,0 +1,26 @@
+pipeline:
+  name: nestedStepPipeline
+  identifier: nestedStepPipeline
+  projectIdentifier: defaultproject
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: q1
+        identifier: q1
+        template:
+          templateRef: StageA
+          versionLabel: v1
+          templateInputs:
+            type: Approval
+            spec:
+              execution:
+                steps:
+                  - step:
+                      identifier: s2
+                      template:
+                        templateInputs:
+                          type: HarnessApproval
+                          spec:
+                            approvers:
+                              userGroups: <+input>

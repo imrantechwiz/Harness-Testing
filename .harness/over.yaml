@@ -1,0 +1,9 @@
+overlayInputSet:
+    name: over
+    identifier: over
+    orgIdentifier: default
+    projectIdentifier: imranTest
+    pipelineIdentifier: pipe13june
+    inputSetReferences:
+        - set344
+    tags: {}

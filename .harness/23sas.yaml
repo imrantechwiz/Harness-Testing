@@ -1,0 +1,32 @@
+pipeline:
+  name: 23sas
+  identifier: sas
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: q1
+        identifier: q1
+        description: "adsfd"
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: aa
+                  identifier: aa
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups:
+                        - account.PLQE
+                    approverInputs: []
+        tags: {}
