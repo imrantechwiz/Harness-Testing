@@ -1,0 +1,29 @@
+template:
+  name: PT
+  identifier: PT
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: GitX_Remote
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: wq
+          identifier: wq
+          template:
+            templateRef: StageA
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: s2
+                        template:
+                          templateInputs:
+                            type: HarnessApproval
+                            spec:
+                              approvers:
+                                userGroups: <+input>

@@ -1,0 +1,27 @@
+pipeline:
+  name: pipe7oct
+  identifier: pipe7oct
+  projectIdentifier: defaultproject
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: A1
+        identifier: A1
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: W2
+                  identifier: W2
+                  template:
+                    templateRef: StepA
+                    versionLabel: v1
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+        tags: {}
