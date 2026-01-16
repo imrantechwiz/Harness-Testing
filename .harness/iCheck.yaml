@@ -1,0 +1,27 @@
+pipeline:
+  name: iCheck
+  identifier: iCheck
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: qq
+        identifier: qq
+        description: hjgjhgjgbbbbbbbb
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: cvcv
+                  identifier: cvcv
+                  template:
+                    templateRef: account.oct5Step
+                    versionLabel: v2
+                    templateInputs:
+                      type: HarnessApproval
+                      spec:
+                        approvers:
+                          userGroups: <+input>
+        tags: {}
