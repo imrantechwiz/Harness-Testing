@@ -1,7 +1,7 @@
 pipeline:
   name: "import13"
   identifier: "import13"
-  projectIdentifier: "imranTest"
+  projectIdentifier: "EnableGitSimplifictionViaAPI"
   orgIdentifier: "default"
   tags: {}
   stages:

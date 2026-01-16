@@ -1,0 +1,21 @@
+inputSet:
+  identifier: "qwwe"
+  name: "qwwe"
+  orgIdentifier: "default"
+  projectIdentifier: "imranTest"
+  pipeline:
+    identifier: "GHCHeck"
+    stages:
+    - stage:
+        identifier: "sq"
+        type: "Approval"
+        spec:
+          execution:
+            steps:
+            - step:
+                identifier: "wqq"
+                type: "HarnessApproval"
+                spec:
+                  approvers:
+                    userGroups:
+                    - "account.PLQE"
