@@ -1,10 +1,11 @@
 inputSet:
-  identifier: "a1"
-  name: "a1"
+  identifier: "a28"
+  name: "a28"
+  tags: {}
   orgIdentifier: "default"
-  projectIdentifier: "june6"
+  projectIdentifier: "imranTest"
   pipeline:
-    identifier: "pipe2"
+    identifier: "P28"
     stages:
     - stage:
         identifier: "a1"

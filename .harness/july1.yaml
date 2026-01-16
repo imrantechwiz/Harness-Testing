@@ -1,21 +1,21 @@
 pipeline:
-    name: pipe15
-    identifier: pipe15
+    name: july1
+    identifier: july1
     projectIdentifier: imranTest
     orgIdentifier: default
     tags: {}
     stages:
         - stage:
-              name: A2
-              identifier: A2
-              description: ""
+              name: a1
+              identifier: a1
+              description: "Desc added"
               type: Approval
               spec:
                   execution:
                       steps:
                           - step:
-                                name: A3
-                                identifier: A3
+                                name: q1
+                                identifier: q1
                                 type: HarnessApproval
                                 timeout: 1d
                                 spec:
