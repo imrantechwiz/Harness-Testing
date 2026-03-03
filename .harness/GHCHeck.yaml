@@ -1,0 +1,31 @@
+pipeline:
+  name: GHCHeck
+  identifier: GHCHeck
+  projectIdentifier: imranTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: sq
+        identifier: sq
+        description: asdasd
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: wqq
+                  identifier: wqq
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      sdsdfdsfdsfdsfdsfsdfsfdsfdsfs
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
